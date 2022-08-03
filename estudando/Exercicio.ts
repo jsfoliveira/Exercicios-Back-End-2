@@ -54,11 +54,30 @@ class Student {
     };
     this._worksGrades = value;
   }
+
+  sumGrades (): number {
+    return [...this.examsGrades, ...this.worksGrades].reduce((previousGrade, grade) => {
+      grade += previousGrade;
+      return grade;
+    }, 0);
+  }
+
+  mediaGrades (): number {
+   const sumGrade = this.sumGrades();
+   const divider = this.examsGrades.length + this.worksGrades.length;
+
+   return Math.round(sumGrade / divider);
+  }
+
 }
 
 // criar um estudante, passando valores
-const student1 = new Student('1234', 'Gustavo', [1,2,3,4], [5,6]);
+const student1 = new Student('1234', 'Gustavo', [5,6,7,8], [8,9]);
 console.log(student1);
+console.log('Soma das notas:', student1.sumGrades());
+console.log('Média das notas:', student1.mediaGrades());
 
 const student2 = new Student('5678', 'João', [1,2,3,4], [5,6]);
 console.log(student2);
+console.log('Soma das notas:', student2.sumGrades());
+console.log('Média das notas:', student2.mediaGrades());
