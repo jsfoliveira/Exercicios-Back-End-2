@@ -1,0 +1,96 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'typescript',
+1 verbose cli   'ts-node',
+1 verbose cli   '-D' ]
+2 info using npm@1.2.11
+3 info using node@v0.8.20
+4 verbose read json /home/pbpeixoto/trybe/2-exercicio-back-end/estudando/package.json
+5 warn package.json estudando@1.0.0 No README.md file found!
+6 verbose read json /home/pbpeixoto/trybe/2-exercicio-back-end/estudando/node_modules/create-require/package.json
+7 verbose read json /home/pbpeixoto/trybe/2-exercicio-back-end/estudando/node_modules/make-error/package.json
+8 verbose read json /home/pbpeixoto/trybe/2-exercicio-back-end/estudando/node_modules/@jridgewell/package.json
+9 verbose read json /home/pbpeixoto/trybe/2-exercicio-back-end/estudando/node_modules/@tsconfig/package.json
+10 verbose read json /home/pbpeixoto/trybe/2-exercicio-back-end/estudando/node_modules/diff/package.json
+11 verbose read json /home/pbpeixoto/trybe/2-exercicio-back-end/estudando/node_modules/v8-compile-cache-lib/package.json
+12 verbose read json /home/pbpeixoto/trybe/2-exercicio-back-end/estudando/node_modules/acorn-walk/package.json
+13 verbose read json /home/pbpeixoto/trybe/2-exercicio-back-end/estudando/node_modules/yn/package.json
+14 verbose read json /home/pbpeixoto/trybe/2-exercicio-back-end/estudando/node_modules/typescript/package.json
+15 verbose read json /home/pbpeixoto/trybe/2-exercicio-back-end/estudando/node_modules/arg/package.json
+16 verbose read json /home/pbpeixoto/trybe/2-exercicio-back-end/estudando/node_modules/ts-node/package.json
+17 verbose read json /home/pbpeixoto/trybe/2-exercicio-back-end/estudando/node_modules/@cspotcode/package.json
+18 verbose read json /home/pbpeixoto/trybe/2-exercicio-back-end/estudando/node_modules/@types/package.json
+19 verbose read json /home/pbpeixoto/trybe/2-exercicio-back-end/estudando/node_modules/acorn/package.json
+20 verbose from cache /home/pbpeixoto/trybe/2-exercicio-back-end/estudando/package.json
+21 verbose readDependencies using package.json deps
+22 verbose cache add [ 'typescript', null ]
+23 verbose cache add name=undefined spec="typescript" args=["typescript",null]
+24 verbose parsed url { pathname: 'typescript',
+24 verbose parsed url   path: 'typescript',
+24 verbose parsed url   href: 'typescript' }
+25 verbose cache add [ 'ts-node', null ]
+26 verbose cache add name=undefined spec="ts-node" args=["ts-node",null]
+27 verbose parsed url { pathname: 'ts-node', path: 'ts-node', href: 'ts-node' }
+28 silly lockFile fb9da861-typescript typescript
+29 verbose lock typescript /home/pbpeixoto/.npm/fb9da861-typescript.lock
+30 silly lockFile 96bb029a-ts-node ts-node
+31 verbose lock ts-node /home/pbpeixoto/.npm/96bb029a-ts-node.lock
+32 silly lockFile fb9da861-typescript typescript
+33 silly lockFile fb9da861-typescript typescript
+34 verbose addNamed [ 'typescript', '' ]
+35 verbose addNamed [ null, '' ]
+36 silly lockFile b598c0ef-typescript typescript@
+37 verbose lock typescript@ /home/pbpeixoto/.npm/b598c0ef-typescript.lock
+38 silly lockFile 96bb029a-ts-node ts-node
+39 silly lockFile 96bb029a-ts-node ts-node
+40 verbose addNamed [ 'ts-node', '' ]
+41 verbose addNamed [ null, '' ]
+42 silly lockFile 2d892999-ts-node ts-node@
+43 verbose lock ts-node@ /home/pbpeixoto/.npm/2d892999-ts-node.lock
+44 silly addNameRange { name: 'typescript', range: '', hasData: false }
+45 silly addNameRange { name: 'ts-node', range: '', hasData: false }
+46 verbose url raw typescript
+47 verbose url resolving [ 'https://registry.npmjs.org/', './typescript' ]
+48 verbose url resolved https://registry.npmjs.org/typescript
+49 info trying registry request attempt 1 at 11:29:04
+50 http GET https://registry.npmjs.org/typescript
+51 verbose url raw ts-node
+52 verbose url resolving [ 'https://registry.npmjs.org/', './ts-node' ]
+53 verbose url resolved https://registry.npmjs.org/ts-node
+54 info trying registry request attempt 1 at 11:29:04
+55 http GET https://registry.npmjs.org/ts-node
+56 info retry will retry, error on last attempt: Error: 140422675523392:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+57 info retry will retry, error on last attempt: Error: 140422675523392:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+58 info trying registry request attempt 2 at 11:29:14
+59 http GET https://registry.npmjs.org/typescript
+60 info trying registry request attempt 2 at 11:29:14
+61 http GET https://registry.npmjs.org/ts-node
+62 info retry will retry, error on last attempt: Error: 140422675523392:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+63 info retry will retry, error on last attempt: Error: 140422675523392:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+64 info trying registry request attempt 3 at 11:30:14
+65 http GET https://registry.npmjs.org/ts-node
+66 info trying registry request attempt 3 at 11:30:14
+67 http GET https://registry.npmjs.org/typescript
+68 silly lockFile 2d892999-ts-node ts-node@
+69 silly lockFile 2d892999-ts-node ts-node@
+70 error Error: 140422675523392:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+70 error
+70 error     at CleartextStream._puller (tls.js:667:24)
+70 error     at CleartextStream.CryptoStream._pull (tls.js:601:19)
+70 error     at SecurePair.cycle (tls.js:891:20)
+70 error     at EncryptedStream.CryptoStream.write (tls.js:285:13)
+70 error     at Socket.ondata (stream.js:38:26)
+70 error     at Socket.EventEmitter.emit (events.js:96:17)
+70 error     at TCP.onread (net.js:397:14)
+71 error If you need help, you may report this log at:
+71 error     <http://github.com/isaacs/npm/issues>
+71 error or email it to:
+71 error     <npm-@googlegroups.com>
+72 error System Linux 5.4.0-122-generic
+73 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "typescript" "ts-node" "-D"
+74 error cwd /home/pbpeixoto/trybe/2-exercicio-back-end/estudando
+75 error node -v v0.8.20
+76 error npm -v 1.2.11
+77 verbose exit [ 1, true ]
