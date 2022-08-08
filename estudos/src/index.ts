@@ -1,1 +1,26 @@
-Suponha que você deve construir uma aplicação para gerenciar a situação de pessoas estudantes em uma escola. A sua primeira tarefa é criar uma função que, ao ser chamada, determina a aprovação ou não de uma pessoa estudante e atualiza seu status no banco de dados como Aprovada ou Reprovada. Além disso, as notas marcadas de 0% a 100% (0.0 a 1.0) devem ser convertidas para os conceitos de A a F.
+// Crie uma interface chamada MyInterface.
+// MyInterface deve possuir um atributo myNumber do tipo number.
+// MyInterface deve possuir um método myFunc, que recebe um parâmetro myParam do tipo number e retorna uma string.
+interface MyInterface {
+  myNumber: number,
+
+  myFunc(myParam: number): string;
+}
+
+// Crie uma classe MyClass que implementa MyInterface.
+// Faça o atributo myNumber ser inicializado diretamente nos parâmetros do construtor da MyClass.
+class MyClass implements MyInterface {
+  constructor( public myNumber: number) {
+  }
+
+// Faça o método myFunc somar o myNumber com o myParam e retornar uma string qualquer que contenha a soma.
+  myFunc(myParam: number): string {
+    const soma = myParam + this.myNumber;
+    return `A soma é ${soma}`;
+  }
+}
+
+// Crie um objeto da classe MyClass e o utilize acessando myNumber e chamando myFunc.
+const objeto = new MyClass(2);
+console.log(objeto.myNumber);
+console.log(objeto.myFunc(4));
