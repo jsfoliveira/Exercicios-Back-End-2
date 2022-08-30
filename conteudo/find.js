@@ -13,3 +13,6 @@
 // 1 ou true para incluir um campo nos documentos retornados;
 // 0 ou false para excluir um campo;
 // o "_id": 0  é só pra não ver o id sendo retornado na resposta
+
+// retornar todos os name da coleção
+//db.colecao.find({}, { name: 1 })
