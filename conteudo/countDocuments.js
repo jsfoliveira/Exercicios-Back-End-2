@@ -1,0 +1,1 @@
+// o  db.colecao.countDocuments({}) faz o mesmo que count(), vai contar quantos documentos, ou seja quantos objetos tem a coleção.
