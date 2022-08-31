@@ -1,0 +1,20 @@
+3.mongodb
+
+use('business');
+
+
+db.restaurants.deleteMany({ cuisine: "Ice Cream, Gelato, Yogurt, Ices" });
+
+use('business');
+db.restaurants.find({});
+
+use('exercise');
+db.superheroes.find({});
+
+use('exercise');
+db.superheroes.find({
+  "aspects.height": {
+    $lt: 180
+  }
+});
+
