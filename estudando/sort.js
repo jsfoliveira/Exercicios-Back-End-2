@@ -1,4 +1,5 @@
 // sort ordena
+// tem que vir acompanhado do find
 // 1 ordena de forma crescente
 // -1 ordena de forma decrescente
 
