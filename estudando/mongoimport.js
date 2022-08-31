@@ -1,0 +1,1 @@
+// $mongoimport --db exercise --collection superheroes --file exercises.json
