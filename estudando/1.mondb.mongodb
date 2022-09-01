@@ -1,0 +1,40 @@
+1.mondb
+// download do banco de dados
+use ("conteudo_trybe");
+db.inventory.insertMany([
+{ "item": "journal", "qty": 25, "size": { "h": 14, "w": 21, "uom": "cm" }, "status": "A" },
+{ "item": "notebook", "qty": 50, "size": { "h": 8.5, "w": 11, "uom": "in" }, "status": "A" },
+{ "item": "paper", "qty": 100, "size": { "h": 8.5, "w": 11, "uom": "in" }, "status": "D" },
+{ "item": "planner", "qty": 75, "size": { "h": 22.85, "w": 30, "uom": "cm" }, "status": "D" },
+{ "item": "postcard", "qty": 45, "size": { "h": 10, "w": 15.25, "uom": "cm" }, "status": "A" }
+]);
+
+// motrar todos documentos da coleção inventory
+use ("conteudo_trybe");
+db.inventory.find({});
+
+// altera o primeiro documento que satisfaça a condição
+use ("conteudo_trybe");
+db.inventory.updateOne(
+  { item: "paper" },
+  { $set: { "size.uom": "cm", status: "P" } }
+);
+
+// adiciona uma nova coleção com 100 documentos
+use ("conteudo_trybe");
+db.products.insertOne({
+  _id: 100,
+  sku: "abc123",
+  quantity: 250,
+  instock: true,
+  reorder: false,
+  details: { model: "14Q2", make: "xyz" },
+  tags: [ "apparel", "clothing" ],
+  ratings: [ { by: "ijk", rating: 4 } ]
+})
+
+use ("conteudo_trybe");
+db.products.find({});
+
+use ("conteudo_trybe");
+db.products.update({});
